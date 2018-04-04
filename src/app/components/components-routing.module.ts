@@ -6,6 +6,12 @@ import { AgentComponent } from './agent.component';
 
 const routes: Routes = [
   {
+    // path: '',
+    // component: AgentComponent,
+    // data: {
+    //   title: 'Dashboard'
+    // }
+
     path: '',
     data: {
       title: 'Components'
@@ -20,6 +26,7 @@ const routes: Routes = [
       }
       
     ]
+ 
   }
 ];
 

@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 
+
 import { AppComponent } from './app.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
@@ -16,7 +17,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { NgProgressModule } from 'ngx-progressbar';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule } from '@angular/forms';
+//import { FormsModule , ReactiveFormsModule } from '@angular/forms';
 import { Globals } from '../Globals';
 
 import { ChartsModule } from 'ng2-charts/ng2-charts';
@@ -31,7 +32,6 @@ import {AuthService} from './auth.service';
 import { FullLayoutComponent } from './layouts/full-layout.component';
 import { SimpleLayoutComponent } from './layouts/simple-layout.component'
 import { HttpClientModule ,HttpClient } from '@angular/common/http';
-import { AgentComponent } from './components/agent.component';
 
 @NgModule({
   imports: [
@@ -43,10 +43,11 @@ import { AgentComponent } from './components/agent.component';
     NgProgressModule,
     ModalModule,
     HttpClientModule,
-    FormsModule,
+   // FormsModule,
+    //ReactiveFormsModule,
     CommonModule,
     BrowserAnimationsModule, // required animations module
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot()
   ],
   declarations: [
     AppComponent,
@@ -55,8 +56,7 @@ import { AgentComponent } from './components/agent.component';
     BreadcrumbsComponent,
     SIDEBAR_TOGGLE_DIRECTIVES,
     AsideToggleDirective,
-    SimpleLayoutComponent,
-    AgentComponent
+    SimpleLayoutComponent
   ],
   providers: [
     AuthService,

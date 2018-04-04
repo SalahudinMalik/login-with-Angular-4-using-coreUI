@@ -6,6 +6,9 @@
       <a class="nav-link navbar-toggler" href="#" appSidebarToggler>&#9776;</a>
     </li>
   </ul>
+  
+    <a class="btn" routerLinkActive="active" [routerLink]="['/']"><span class="icon-logout px-5"></span></a>
+  
 </header>
 
 <div class="app-body">
@@ -13,11 +16,11 @@
     <nav class="sidebar-nav">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" [routerLink]="['/dashboard']"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-info">NEW</span></a>
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['/dashboard']"><i class="icon-speedometer"></i> Dashboard </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" [routerLink]="['/agent']"><i class="icon-people"></i> Agent </a>
-        </li>
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/agent']"><i class="icon-people"></i> Agent </a>
+         </li>
       </ul>
     </nav>
   </div>
@@ -37,6 +40,5 @@
 </div>
 
 <footer class="app-footer">
-  <a href="http://coreui.io">CoreUI</a> &copy; 2017 creativeLabs.
-  <span class="float-right">Powered by <a href="http://coreui.io">CoreUI</a></span>
+  <a href="http://d-bz.com/">D-Biz Pvt Ltd</a> &copy; 2018
 </footer>
